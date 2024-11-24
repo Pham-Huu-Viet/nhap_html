@@ -1,0 +1,114 @@
+* {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  > * {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+header {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 100px;
+}
+
+main {
+  background-color: antiquewhite;
+  flex: 1;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+a {
+  color: blue;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+}
+/* 
+nav > a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid aliceblue;
+
+  &:hover {
+    color: red;
+    border-bottom: 1px solid red;
+  }
+} */
+
+footer > a {
+  color: wheat;
+}
+
+svg {
+  width: 20px;
+}
+
+.nhap {
+  padding: 0;
+  height: 50px;
+  padding: 10px;
+  background-color: blanchedalmond;
+}
+
+.element {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+  float: left;
+}
+
+h3 {
+  display: inline-block;
+  float: right;
+}
+
+.nhap2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  * {
+    width: 100%;
+    height: 20px;
+    background-color: blueviolet;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nhap2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
